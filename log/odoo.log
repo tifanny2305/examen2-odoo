@@ -1,0 +1,467 @@
+2024-10-26 17:10:15,482 1 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.request:INFO" 
+2024-10-26 17:10:15,483 1 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.response:INFO" 
+2024-10-26 17:10:15,483 1 DEBUG ? odoo.netsvc: logger level set: ":INFO" 
+2024-10-26 17:10:15,484 1 DEBUG ? odoo.netsvc: logger level set: "odoo:DEBUG" 
+2024-10-26 17:10:15,484 1 DEBUG ? odoo.netsvc: logger level set: "odoo.sql_db:INFO" 
+2024-10-26 17:10:15,485 1 DEBUG ? odoo.netsvc: logger level set: ":INFO" 
+2024-10-26 17:10:15,485 1 INFO ? odoo: Odoo version 17.0-20241017 
+2024-10-26 17:10:15,487 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-10-26 17:10:15,487 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/17.0', '/mnt/extra-addons'] 
+2024-10-26 17:10:15,488 1 INFO ? odoo: database: odoo@db:5432 
+2024-10-26 17:10:15,599 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-10-26 17:10:15,816 1 DEBUG ? odoo.service.server: Setting signal handlers 
+2024-10-26 17:10:15,818 1 DEBUG ? odoo.service.server: cron0 started! 
+2024-10-26 17:10:15,818 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 1cbe2f23af93:8069 
+2024-10-26 17:10:15,819 1 DEBUG ? odoo.service.server: cron1 started! 
+2024-10-26 17:10:19,049 1 DEBUG ? odoo.http: HTTP sessions stored in: /var/lib/odoo/.local/share/Odoo/sessions 
+2024-10-26 17:10:19,240 1 DEBUG ? odoo.modules.registry: Multiprocess load registry signaling: [Registry: 1] [Cache default: 1] [Cache assets: 1] [Cache templates: 1] [Cache routing: 1] 
+2024-10-26 17:10:19,243 1 INFO agenda_odoo odoo.modules.loading: loading 1 modules... 
+2024-10-26 17:10:19,244 1 DEBUG agenda_odoo odoo.modules.loading: Loading module base (1/1) 
+2024-10-26 17:10:19,251 1 DEBUG agenda_odoo odoo.modules.loading: Module base loaded in 0.01s, 0 queries 
+2024-10-26 17:10:19,252 1 INFO agenda_odoo odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-10-26 17:10:19,263 1 DEBUG agenda_odoo odoo.modules.loading: Updating graph with 10 more modules 
+2024-10-26 17:10:19,264 1 INFO agenda_odoo odoo.modules.loading: loading 11 modules... 
+2024-10-26 17:10:19,264 1 DEBUG agenda_odoo odoo.modules.loading: Loading module web (2/11) 
+2024-10-26 17:10:19,267 1 DEBUG agenda_odoo odoo.modules.loading: Module web loaded in 0.00s, 0 queries 
+2024-10-26 17:10:19,267 1 DEBUG agenda_odoo odoo.modules.loading: Loading module auth_totp (3/11) 
+2024-10-26 17:10:19,280 1 DEBUG agenda_odoo odoo.modules.loading: Module auth_totp loaded in 0.01s, 0 queries 
+2024-10-26 17:10:19,281 1 DEBUG agenda_odoo odoo.modules.loading: Loading module base_import (4/11) 
+2024-10-26 17:10:19,306 1 DEBUG agenda_odoo odoo.modules.loading: Module base_import loaded in 0.02s, 0 queries 
+2024-10-26 17:10:19,306 1 DEBUG agenda_odoo odoo.modules.loading: Loading module base_import_module (5/11) 
+2024-10-26 17:10:19,313 1 DEBUG agenda_odoo odoo.modules.loading: Module base_import_module loaded in 0.01s, 0 queries 
+2024-10-26 17:10:19,314 1 DEBUG agenda_odoo odoo.modules.loading: Loading module base_setup (6/11) 
+2024-10-26 17:10:19,318 1 DEBUG agenda_odoo odoo.modules.loading: Module base_setup loaded in 0.00s, 0 queries 
+2024-10-26 17:10:19,319 1 DEBUG agenda_odoo odoo.modules.loading: Loading module bus (7/11) 
+2024-10-26 17:10:19,335 1 DEBUG agenda_odoo odoo.modules.loading: Module bus loaded in 0.02s, 0 queries 
+2024-10-26 17:10:19,335 1 DEBUG agenda_odoo odoo.modules.loading: Loading module web_tour (8/11) 
+2024-10-26 17:10:19,338 1 DEBUG agenda_odoo odoo.modules.loading: Module web_tour loaded in 0.00s, 0 queries 
+2024-10-26 17:10:19,339 1 DEBUG agenda_odoo odoo.modules.loading: Loading module iap (9/11) 
+2024-10-26 17:10:19,344 1 DEBUG agenda_odoo odoo.modules.loading: Module iap loaded in 0.01s, 0 queries 
+2024-10-26 17:10:19,345 1 DEBUG agenda_odoo odoo.modules.loading: Loading module web_editor (10/11) 
+2024-10-26 17:10:19,374 1 DEBUG agenda_odoo odoo.modules.loading: Module web_editor loaded in 0.03s, 0 queries 
+2024-10-26 17:10:19,375 1 DEBUG agenda_odoo odoo.modules.loading: Loading module web_unsplash (11/11) 
+2024-10-26 17:10:19,379 1 DEBUG agenda_odoo odoo.modules.loading: Module web_unsplash loaded in 0.00s, 0 queries 
+2024-10-26 17:10:19,380 1 INFO agenda_odoo odoo.modules.loading: 11 modules loaded in 0.12s, 0 queries (+0 extra) 
+2024-10-26 17:10:19,408 1 INFO agenda_odoo odoo.modules.loading: Modules loaded. 
+2024-10-26 17:10:19,411 1 INFO agenda_odoo odoo.modules.registry: Registry loaded in 0.187s 
+2024-10-26 17:10:19,413 1 INFO agenda_odoo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-10-26 17:10:19,454 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:10:19] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 22 0.015 0.391
+2024-10-26 17:10:19,763 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-10-26 17:10:22,291 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:10:22] "GET /web?debug=1 HTTP/1.1" 200 - 65 0.024 1.702
+2024-10-26 17:10:22,691 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:10:22] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.003 0.005
+2024-10-26 17:10:22,708 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:10:22] "GET /bus/websocket_worker_bundle?v=17.0-1 HTTP/1.1" 304 - 4 0.003 0.008
+2024-10-26 17:10:22,763 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:10:22] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 15 0.010 0.016
+2024-10-26 17:10:22,774 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:10:22] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 1 0.002 0.025
+2024-10-26 17:10:23,035 1 DEBUG ? odoo.modules.module: module __pycache__: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:10:23,264 1 DEBUG ? odoo.modules.module: module __init__.py: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:10:23,303 1 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'agenda', defaulting to LGPL-3 
+2024-10-26 17:10:23,314 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:10:23] "POST /web/action/load HTTP/1.1" 200 - 10 0.004 0.614
+2024-10-26 17:10:23,341 1 DEBUG agenda_odoo odoo.api: call ir.module.module().get_views(options={'action_id': 38, 'load_filters': True, 'toolbar': True}, views=[[False, 'kanban'], [False, 'list'], [False, 'form'], [94, 'search']]) 
+2024-10-26 17:10:23,389 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:10:23] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 47 0.016 0.035
+2024-10-26 17:10:23,405 1 DEBUG agenda_odoo odoo.api: call ir.module.module().search_panel_select_range('category_id', category_domain=[], enable_counters=True, expand=False, filter_domain=[], hierarchize=True, limit=200, search_domain=[['application', '=', True]]) 
+2024-10-26 17:10:23,407 1 DEBUG agenda_odoo odoo.api: call ir.module.module().search_panel_select_range('module_type', category_domain=[], enable_counters=False, expand=True, filter_domain=[], hierarchize=True, limit=200, search_domain=[['application', '=', True]]) 
+2024-10-26 17:10:23,417 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:10:23] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.016
+2024-10-26 17:10:23,421 1 DEBUG agenda_odoo odoo.api: call ir.module.module().web_search_read(count_limit=10001, domain=[['application', '=', True]], limit=80, offset=0, order='', specification={'icon': {}, 'icon_flag': {}, 'to_buy': {}, 'name': {}, 'state': {}, 'summary': {}, 'website': {}, 'application': {}, 'module_type': {}, 'shortdesc': {}}) 
+2024-10-26 17:10:23,433 1 DEBUG agenda_odoo odoo.modules.module: module mrp_workorder: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:10:23,435 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:10:23] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 41 0.016 0.018
+2024-10-26 17:10:23,438 1 DEBUG agenda_odoo odoo.modules.module: module account_accountant: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:10:23,441 1 DEBUG agenda_odoo odoo.modules.module: module knowledge: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:10:23,446 1 DEBUG agenda_odoo odoo.modules.module: module timesheet_grid: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:10:23,448 1 DEBUG agenda_odoo odoo.modules.module: module web_studio: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:10:23,450 1 DEBUG agenda_odoo odoo.modules.module: module industry_fsm: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:10:23,454 1 DEBUG agenda_odoo odoo.modules.module: module sign: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:10:23,456 1 DEBUG agenda_odoo odoo.modules.module: module helpdesk: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:10:23,457 1 DEBUG agenda_odoo odoo.modules.module: module sale_subscription: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:10:23,459 1 DEBUG agenda_odoo odoo.modules.module: module quality_control: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:10:23,461 1 DEBUG agenda_odoo odoo.modules.module: module planning: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:10:23,464 1 DEBUG agenda_odoo odoo.modules.module: module mrp_plm: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:10:23,466 1 DEBUG agenda_odoo odoo.modules.module: module social: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:10:23,467 1 DEBUG agenda_odoo odoo.modules.module: module hr_appraisal: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:10:23,469 1 DEBUG agenda_odoo odoo.modules.module: module marketing_automation: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:10:23,472 1 DEBUG agenda_odoo odoo.modules.module: module appointment: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:10:23,474 1 DEBUG agenda_odoo odoo.modules.module: module web_mobile: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:10:23,477 1 DEBUG agenda_odoo odoo.modules.module: module stock_barcode: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:10:23,479 1 DEBUG agenda_odoo odoo.modules.module: module voip: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:10:23,482 1 DEBUG agenda_odoo odoo.modules.module: module sale_amazon: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:10:23,483 1 DEBUG agenda_odoo odoo.modules.module: module sale_ebay: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:10:23,490 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:10:23] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.005 0.082
+2024-10-26 17:10:24,298 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:10:24] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.003
+2024-10-26 17:11:15,863 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2024-10-26 17:11:16,910 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2024-10-26 17:12:15,924 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2024-10-26 17:12:17,982 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2024-10-26 17:13:15,924 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2024-10-26 17:13:19,072 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2024-10-26 17:14:15,985 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2024-10-26 17:14:20,144 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2024-10-26 17:15:16,039 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2024-10-26 17:15:21,215 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2024-10-26 17:16:16,056 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2024-10-26 17:16:22,286 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2024-10-26 17:17:05,689 1 INFO ? odoo.service.server: Initiating shutdown 
+2024-10-26 17:17:05,690 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-10-26 17:17:05,811 1 DEBUG ? odoo.service.server: on_close call <bound method Event.set of <threading.Event object at 0x7fe71da01630>> 
+2024-10-26 17:17:05,812 1 DEBUG ? odoo.service.server: on_close call <function _kick_all at 0x7fe71da445e0> 
+2024-10-26 17:17:05,814 1 DEBUG ? odoo.service.server: current thread: <_MainThread(MainThread, started 140630779432960)> 
+2024-10-26 17:17:05,815 1 DEBUG ? odoo.service.server: process <_MainThread(MainThread, started 140630779432960)> (False) 
+2024-10-26 17:17:05,817 1 DEBUG ? odoo.service.server: process <Thread(odoo.service.cron.cron0, started daemon 140630637901376)> (True) 
+2024-10-26 17:17:05,819 1 DEBUG ? odoo.service.server: process <Thread(odoo.service.cron.cron1, started daemon 140630629508672)> (True) 
+2024-10-26 17:17:05,821 1 DEBUG ? odoo.service.server: process <ImDispatch(odoo.addons.bus.models.bus.Bus, started daemon 140630605559360)> (True) 
+2024-10-26 17:17:05,822 1 DEBUG ? odoo.service.server: process <Thread(odoo.service.http.request.140630516823616, started 140630516823616)> (False) 
+2024-10-26 17:17:05,823 1 DEBUG ? odoo.service.server: join and sleep 
+2024-10-26 17:17:05,888 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 5 connections  
+2024-10-26 17:17:05,891 1 DEBUG ? odoo.service.server: -- 
+2024-10-26 17:17:08,152 1 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.request:INFO" 
+2024-10-26 17:17:08,153 1 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.response:INFO" 
+2024-10-26 17:17:08,154 1 DEBUG ? odoo.netsvc: logger level set: ":INFO" 
+2024-10-26 17:17:08,154 1 DEBUG ? odoo.netsvc: logger level set: "odoo:DEBUG" 
+2024-10-26 17:17:08,155 1 DEBUG ? odoo.netsvc: logger level set: "odoo.sql_db:INFO" 
+2024-10-26 17:17:08,156 1 DEBUG ? odoo.netsvc: logger level set: ":INFO" 
+2024-10-26 17:17:08,156 1 INFO ? odoo: Odoo version 17.0-20241017 
+2024-10-26 17:17:08,157 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-10-26 17:17:08,158 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/17.0', '/mnt/extra-addons'] 
+2024-10-26 17:17:08,158 1 INFO ? odoo: database: odoo@db:5432 
+2024-10-26 17:17:08,268 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-10-26 17:17:08,506 1 DEBUG ? odoo.service.server: Setting signal handlers 
+2024-10-26 17:17:08,508 1 DEBUG ? odoo.service.server: cron0 started! 
+2024-10-26 17:17:08,508 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 1cbe2f23af93:8069 
+2024-10-26 17:17:08,509 1 DEBUG ? odoo.service.server: cron1 started! 
+2024-10-26 17:17:12,041 1 DEBUG ? odoo.http: HTTP sessions stored in: /var/lib/odoo/.local/share/Odoo/sessions 
+2024-10-26 17:17:12,058 1 DEBUG ? odoo.modules.registry: Multiprocess load registry signaling: [Registry: 1] [Cache default: 1] [Cache assets: 1] [Cache templates: 1] [Cache routing: 1] 
+2024-10-26 17:17:12,061 1 INFO agenda_odoo odoo.modules.loading: loading 1 modules... 
+2024-10-26 17:17:12,063 1 DEBUG agenda_odoo odoo.modules.loading: Loading module base (1/1) 
+2024-10-26 17:17:12,069 1 DEBUG agenda_odoo odoo.modules.loading: Module base loaded in 0.01s, 0 queries 
+2024-10-26 17:17:12,070 1 INFO agenda_odoo odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-10-26 17:17:12,082 1 DEBUG agenda_odoo odoo.modules.loading: Updating graph with 10 more modules 
+2024-10-26 17:17:12,083 1 INFO agenda_odoo odoo.modules.loading: loading 11 modules... 
+2024-10-26 17:17:12,084 1 DEBUG agenda_odoo odoo.modules.loading: Loading module web (2/11) 
+2024-10-26 17:17:12,086 1 DEBUG agenda_odoo odoo.modules.loading: Module web loaded in 0.00s, 0 queries 
+2024-10-26 17:17:12,087 1 DEBUG agenda_odoo odoo.modules.loading: Loading module auth_totp (3/11) 
+2024-10-26 17:17:12,100 1 DEBUG agenda_odoo odoo.modules.loading: Module auth_totp loaded in 0.01s, 0 queries 
+2024-10-26 17:17:12,101 1 DEBUG agenda_odoo odoo.modules.loading: Loading module base_import (4/11) 
+2024-10-26 17:17:12,126 1 DEBUG agenda_odoo odoo.modules.loading: Module base_import loaded in 0.03s, 0 queries 
+2024-10-26 17:17:12,127 1 DEBUG agenda_odoo odoo.modules.loading: Loading module base_import_module (5/11) 
+2024-10-26 17:17:12,135 1 DEBUG agenda_odoo odoo.modules.loading: Module base_import_module loaded in 0.01s, 0 queries 
+2024-10-26 17:17:12,136 1 DEBUG agenda_odoo odoo.modules.loading: Loading module base_setup (6/11) 
+2024-10-26 17:17:12,140 1 DEBUG agenda_odoo odoo.modules.loading: Module base_setup loaded in 0.00s, 0 queries 
+2024-10-26 17:17:12,141 1 DEBUG agenda_odoo odoo.modules.loading: Loading module bus (7/11) 
+2024-10-26 17:17:12,155 1 DEBUG agenda_odoo odoo.modules.loading: Module bus loaded in 0.01s, 0 queries 
+2024-10-26 17:17:12,156 1 DEBUG agenda_odoo odoo.modules.loading: Loading module web_tour (8/11) 
+2024-10-26 17:17:12,159 1 DEBUG agenda_odoo odoo.modules.loading: Module web_tour loaded in 0.00s, 0 queries 
+2024-10-26 17:17:12,160 1 DEBUG agenda_odoo odoo.modules.loading: Loading module iap (9/11) 
+2024-10-26 17:17:12,166 1 DEBUG agenda_odoo odoo.modules.loading: Module iap loaded in 0.01s, 0 queries 
+2024-10-26 17:17:12,166 1 DEBUG agenda_odoo odoo.modules.loading: Loading module web_editor (10/11) 
+2024-10-26 17:17:12,194 1 DEBUG agenda_odoo odoo.modules.loading: Module web_editor loaded in 0.03s, 0 queries 
+2024-10-26 17:17:12,195 1 DEBUG agenda_odoo odoo.modules.loading: Loading module web_unsplash (11/11) 
+2024-10-26 17:17:12,200 1 DEBUG agenda_odoo odoo.modules.loading: Module web_unsplash loaded in 0.01s, 0 queries 
+2024-10-26 17:17:12,201 1 INFO agenda_odoo odoo.modules.loading: 11 modules loaded in 0.12s, 0 queries (+0 extra) 
+2024-10-26 17:17:12,228 1 INFO agenda_odoo odoo.modules.loading: Modules loaded. 
+2024-10-26 17:17:12,231 1 INFO agenda_odoo odoo.modules.registry: Registry loaded in 0.188s 
+2024-10-26 17:17:12,233 1 INFO agenda_odoo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-10-26 17:17:12,273 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:17:12] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 22 0.014 0.218
+2024-10-26 17:17:12,581 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-10-26 17:17:36,723 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:17:36] "GET /web?debug=1 HTTP/1.1" 200 - 65 0.025 1.752
+2024-10-26 17:17:37,129 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:17:37] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.003 0.005
+2024-10-26 17:17:37,148 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:17:37] "GET /bus/websocket_worker_bundle?v=17.0-1 HTTP/1.1" 304 - 4 0.003 0.007
+2024-10-26 17:17:37,191 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:17:37] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 15 0.011 0.014
+2024-10-26 17:17:37,196 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:17:37] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 1 0.002 0.017
+2024-10-26 17:17:37,455 1 DEBUG ? odoo.modules.module: module __pycache__: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:17:37,672 1 DEBUG ? odoo.modules.module: module __init__.py: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:17:37,726 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:17:37] "POST /web/action/load HTTP/1.1" 200 - 10 0.004 0.586
+2024-10-26 17:17:37,743 1 DEBUG agenda_odoo odoo.api: call ir.module.module().get_views(options={'action_id': 38, 'load_filters': True, 'toolbar': True}, views=[[False, 'kanban'], [False, 'list'], [False, 'form'], [94, 'search']]) 
+2024-10-26 17:17:37,785 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:17:37] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 47 0.015 0.029
+2024-10-26 17:17:37,800 1 DEBUG agenda_odoo odoo.api: call ir.module.module().search_panel_select_range('module_type', category_domain=[], enable_counters=False, expand=True, filter_domain=[], hierarchize=True, limit=200, search_domain=[['application', '=', True]]) 
+2024-10-26 17:17:37,812 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:17:37] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.015
+2024-10-26 17:17:37,813 1 DEBUG agenda_odoo odoo.api: call ir.module.module().search_panel_select_range('category_id', category_domain=[], enable_counters=True, expand=False, filter_domain=[], hierarchize=True, limit=200, search_domain=[['application', '=', True]]) 
+2024-10-26 17:17:37,814 1 DEBUG agenda_odoo odoo.api: call ir.module.module().web_search_read(count_limit=10001, domain=[['application', '=', True]], limit=80, offset=0, order='', specification={'icon': {}, 'icon_flag': {}, 'to_buy': {}, 'name': {}, 'state': {}, 'summary': {}, 'website': {}, 'application': {}, 'module_type': {}, 'shortdesc': {}}) 
+2024-10-26 17:17:37,828 1 DEBUG agenda_odoo odoo.modules.module: module mrp_workorder: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:17:37,834 1 DEBUG agenda_odoo odoo.modules.module: module account_accountant: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:17:37,838 1 DEBUG agenda_odoo odoo.modules.module: module knowledge: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:17:37,843 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:17:37] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 40 0.017 0.028
+2024-10-26 17:17:37,845 1 DEBUG agenda_odoo odoo.modules.module: module timesheet_grid: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:17:37,848 1 DEBUG agenda_odoo odoo.modules.module: module web_studio: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:17:37,851 1 DEBUG agenda_odoo odoo.modules.module: module industry_fsm: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:17:37,854 1 DEBUG agenda_odoo odoo.modules.module: module sign: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:17:37,855 1 DEBUG agenda_odoo odoo.modules.module: module helpdesk: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:17:37,857 1 DEBUG agenda_odoo odoo.modules.module: module sale_subscription: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:17:37,858 1 DEBUG agenda_odoo odoo.modules.module: module quality_control: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:17:37,860 1 DEBUG agenda_odoo odoo.modules.module: module planning: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:17:37,863 1 DEBUG agenda_odoo odoo.modules.module: module mrp_plm: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:17:37,865 1 DEBUG agenda_odoo odoo.modules.module: module social: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:17:37,867 1 DEBUG agenda_odoo odoo.modules.module: module hr_appraisal: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:17:37,869 1 DEBUG agenda_odoo odoo.modules.module: module marketing_automation: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:17:37,870 1 DEBUG agenda_odoo odoo.modules.module: module appointment: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:17:37,872 1 DEBUG agenda_odoo odoo.modules.module: module web_mobile: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:17:37,875 1 DEBUG agenda_odoo odoo.modules.module: module stock_barcode: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:17:37,878 1 DEBUG agenda_odoo odoo.modules.module: module voip: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:17:37,880 1 DEBUG agenda_odoo odoo.modules.module: module sale_amazon: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:17:37,882 1 DEBUG agenda_odoo odoo.modules.module: module sale_ebay: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:17:37,888 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:17:37] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.007 0.081
+2024-10-26 17:17:38,752 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:17:38] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.003
+2024-10-26 17:17:40,268 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:17:40] "POST /web/action/load HTTP/1.1" 200 - 8 0.003 0.006
+2024-10-26 17:17:40,285 1 DEBUG agenda_odoo odoo.api: call base.module.update().get_views(options={'action_id': 42, 'load_filters': False, 'toolbar': False}, views=[[False, 'form']]) 
+2024-10-26 17:17:40,294 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:17:40] "POST /web/dataset/call_kw/base.module.update/get_views HTTP/1.1" 200 - 9 0.003 0.008
+2024-10-26 17:17:40,308 1 DEBUG agenda_odoo odoo.api: call base.module.update().onchange({}, [], {'state': {}, 'updated': {}, 'added': {}}) 
+2024-10-26 17:17:40,310 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:17:40] "POST /web/dataset/call_kw/base.module.update/onchange HTTP/1.1" 200 - 2 0.001 0.003
+2024-10-26 17:17:41,375 1 DEBUG agenda_odoo odoo.api: call base.module.update().web_save({}, specification={'state': {}, 'updated': {}, 'added': {}}) 
+2024-10-26 17:17:41,381 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:17:41] "POST /web/dataset/call_kw/base.module.update/web_save HTTP/1.1" 200 - 5 0.002 0.006
+2024-10-26 17:17:41,392 1 DEBUG agenda_odoo odoo.api: call base.module.update(6,).update_module() 
+2024-10-26 17:17:41,394 1 INFO agenda_odoo odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user admin@gmail.com #2 via 172.18.0.1 
+2024-10-26 17:17:42,006 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:17:42] "POST /web/dataset/call_button HTTP/1.1" 200 - 1386 0.342 0.274
+2024-10-26 17:17:46,271 1 DEBUG agenda_odoo odoo.api: call ir.module.module().search_panel_select_range('category_id', category_domain=[], enable_counters=True, expand=False, filter_domain=[], hierarchize=True, limit=200, search_domain=['&', ['application', '=', True], '|', '|', ['summary', 'ilike', 'agenda'], ['shortdesc', 'ilike', 'agenda'], ['name', 'ilike', 'agenda']]) 
+2024-10-26 17:17:46,302 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:17:46] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 38 0.015 0.019
+2024-10-26 17:17:46,312 1 DEBUG agenda_odoo odoo.api: call ir.module.module().web_search_read(count_limit=10001, domain=['&', ['application', '=', True], '|', '|', ['summary', 'ilike', 'agenda'], ['shortdesc', 'ilike', 'agenda'], ['name', 'ilike', 'agenda']], limit=80, offset=0, order='', specification={'icon': {}, 'icon_flag': {}, 'to_buy': {}, 'name': {}, 'state': {}, 'summary': {}, 'website': {}, 'application': {}, 'module_type': {}, 'shortdesc': {}}) 
+2024-10-26 17:17:46,317 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:17:46] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.002 0.006
+2024-10-26 17:17:47,310 1 DEBUG agenda_odoo odoo.api: call ir.module.module().search_panel_select_range('category_id', category_domain=[], enable_counters=True, expand=False, filter_domain=[], hierarchize=True, limit=200, search_domain=[['application', '=', True]]) 
+2024-10-26 17:17:47,333 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:17:47] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 38 0.011 0.015
+2024-10-26 17:17:47,343 1 DEBUG agenda_odoo odoo.api: call ir.module.module().web_search_read(count_limit=10001, domain=[['application', '=', True]], limit=80, offset=0, order='', specification={'icon': {}, 'icon_flag': {}, 'to_buy': {}, 'name': {}, 'state': {}, 'summary': {}, 'website': {}, 'application': {}, 'module_type': {}, 'shortdesc': {}}) 
+2024-10-26 17:17:47,362 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:17:47] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.002 0.019
+2024-10-26 17:17:47,935 1 DEBUG agenda_odoo odoo.api: call ir.module.module().web_search_read(count_limit=10001, domain=[], limit=80, offset=0, order='', specification={'icon': {}, 'icon_flag': {}, 'to_buy': {}, 'name': {}, 'state': {}, 'summary': {}, 'website': {}, 'application': {}, 'module_type': {}, 'shortdesc': {}}) 
+2024-10-26 17:17:47,936 1 DEBUG agenda_odoo odoo.api: call ir.module.module().search_panel_select_range('category_id', category_domain=[], enable_counters=True, expand=False, filter_domain=[], hierarchize=True, limit=200, search_domain=[]) 
+2024-10-26 17:17:48,011 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:17:48] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 38 0.062 0.017
+2024-10-26 17:17:48,026 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:17:48] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.004 0.089
+2024-10-26 17:18:08,578 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2024-10-26 17:18:09,563 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2024-10-26 17:18:09,860 1 INFO ? odoo.service.server: Initiating shutdown 
+2024-10-26 17:18:09,861 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-10-26 17:18:09,961 1 DEBUG ? odoo.service.server: on_close call <bound method Event.set of <threading.Event object at 0x7f41764dd660>> 
+2024-10-26 17:18:09,962 1 DEBUG ? odoo.service.server: on_close call <function _kick_all at 0x7f41765205e0> 
+2024-10-26 17:18:09,963 1 DEBUG ? odoo.service.server: current thread: <_MainThread(MainThread, started 139919302983680)> 
+2024-10-26 17:18:09,963 1 DEBUG ? odoo.service.server: process <_MainThread(MainThread, started 139919302983680)> (False) 
+2024-10-26 17:18:09,964 1 DEBUG ? odoo.service.server: process <Thread(odoo.service.cron.cron0, started daemon 139919161452096)> (True) 
+2024-10-26 17:18:09,966 1 DEBUG ? odoo.service.server: process <Thread(odoo.service.cron.cron1, started daemon 139919153059392)> (True) 
+2024-10-26 17:18:09,968 1 DEBUG ? odoo.service.server: process <ImDispatch(odoo.addons.bus.models.bus.Bus, started daemon 139919129110080)> (True) 
+2024-10-26 17:18:09,969 1 DEBUG ? odoo.service.server: process <Thread(odoo.service.http.request.139919120717376, started 139919120717376)> (False) 
+2024-10-26 17:18:09,970 1 DEBUG ? odoo.service.server: join and sleep 
+2024-10-26 17:18:10,035 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 5 connections  
+2024-10-26 17:18:10,037 1 DEBUG ? odoo.service.server: -- 
+2024-10-26 17:18:11,559 1 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.request:INFO" 
+2024-10-26 17:18:11,560 1 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.response:INFO" 
+2024-10-26 17:18:11,560 1 DEBUG ? odoo.netsvc: logger level set: ":INFO" 
+2024-10-26 17:18:11,561 1 DEBUG ? odoo.netsvc: logger level set: "odoo:DEBUG" 
+2024-10-26 17:18:11,561 1 DEBUG ? odoo.netsvc: logger level set: "odoo.sql_db:INFO" 
+2024-10-26 17:18:11,562 1 DEBUG ? odoo.netsvc: logger level set: ":INFO" 
+2024-10-26 17:18:11,562 1 INFO ? odoo: Odoo version 17.0-20241017 
+2024-10-26 17:18:11,564 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-10-26 17:18:11,564 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/17.0', '/mnt/extra-addons'] 
+2024-10-26 17:18:11,565 1 INFO ? odoo: database: odoo@db:5432 
+2024-10-26 17:18:11,652 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-10-26 17:18:11,791 1 DEBUG ? odoo.service.server: Setting signal handlers 
+2024-10-26 17:18:11,793 1 DEBUG ? odoo.service.server: cron0 started! 
+2024-10-26 17:18:11,793 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 1cbe2f23af93:8069 
+2024-10-26 17:18:11,794 1 DEBUG ? odoo.service.server: cron1 started! 
+2024-10-26 17:18:11,818 1 DEBUG ? odoo.http: HTTP sessions stored in: /var/lib/odoo/.local/share/Odoo/sessions 
+2024-10-26 17:18:11,835 1 DEBUG ? odoo.modules.registry: Multiprocess load registry signaling: [Registry: 1] [Cache default: 1] [Cache assets: 1] [Cache templates: 1] [Cache routing: 1] 
+2024-10-26 17:18:11,838 1 INFO agenda_odoo odoo.modules.loading: loading 1 modules... 
+2024-10-26 17:18:11,839 1 DEBUG agenda_odoo odoo.modules.loading: Loading module base (1/1) 
+2024-10-26 17:18:11,846 1 DEBUG agenda_odoo odoo.modules.loading: Module base loaded in 0.01s, 0 queries 
+2024-10-26 17:18:11,847 1 INFO agenda_odoo odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-10-26 17:18:11,855 1 DEBUG agenda_odoo odoo.modules.loading: Updating graph with 10 more modules 
+2024-10-26 17:18:11,855 1 INFO agenda_odoo odoo.modules.loading: loading 11 modules... 
+2024-10-26 17:18:11,856 1 DEBUG agenda_odoo odoo.modules.loading: Loading module web (2/11) 
+2024-10-26 17:18:11,858 1 DEBUG agenda_odoo odoo.modules.loading: Module web loaded in 0.00s, 0 queries 
+2024-10-26 17:18:11,859 1 DEBUG agenda_odoo odoo.modules.loading: Loading module auth_totp (3/11) 
+2024-10-26 17:18:11,866 1 DEBUG agenda_odoo odoo.modules.loading: Module auth_totp loaded in 0.01s, 0 queries 
+2024-10-26 17:18:11,867 1 DEBUG agenda_odoo odoo.modules.loading: Loading module base_import (4/11) 
+2024-10-26 17:18:11,881 1 DEBUG agenda_odoo odoo.modules.loading: Module base_import loaded in 0.01s, 0 queries 
+2024-10-26 17:18:11,882 1 DEBUG agenda_odoo odoo.modules.loading: Loading module base_import_module (5/11) 
+2024-10-26 17:18:11,886 1 DEBUG agenda_odoo odoo.modules.loading: Module base_import_module loaded in 0.00s, 0 queries 
+2024-10-26 17:18:11,886 1 DEBUG agenda_odoo odoo.modules.loading: Loading module base_setup (6/11) 
+2024-10-26 17:18:11,889 1 DEBUG agenda_odoo odoo.modules.loading: Module base_setup loaded in 0.00s, 0 queries 
+2024-10-26 17:18:11,889 1 DEBUG agenda_odoo odoo.modules.loading: Loading module bus (7/11) 
+2024-10-26 17:18:11,899 1 DEBUG agenda_odoo odoo.modules.loading: Module bus loaded in 0.01s, 0 queries 
+2024-10-26 17:18:11,900 1 DEBUG agenda_odoo odoo.modules.loading: Loading module web_tour (8/11) 
+2024-10-26 17:18:11,902 1 DEBUG agenda_odoo odoo.modules.loading: Module web_tour loaded in 0.00s, 0 queries 
+2024-10-26 17:18:11,902 1 DEBUG agenda_odoo odoo.modules.loading: Loading module iap (9/11) 
+2024-10-26 17:18:11,905 1 DEBUG agenda_odoo odoo.modules.loading: Module iap loaded in 0.00s, 0 queries 
+2024-10-26 17:18:11,906 1 DEBUG agenda_odoo odoo.modules.loading: Loading module web_editor (10/11) 
+2024-10-26 17:18:11,923 1 DEBUG agenda_odoo odoo.modules.loading: Module web_editor loaded in 0.02s, 0 queries 
+2024-10-26 17:18:11,924 1 DEBUG agenda_odoo odoo.modules.loading: Loading module web_unsplash (11/11) 
+2024-10-26 17:18:11,926 1 DEBUG agenda_odoo odoo.modules.loading: Module web_unsplash loaded in 0.00s, 0 queries 
+2024-10-26 17:18:11,927 1 INFO agenda_odoo odoo.modules.loading: 11 modules loaded in 0.07s, 0 queries (+0 extra) 
+2024-10-26 17:18:11,954 1 INFO agenda_odoo odoo.modules.loading: Modules loaded. 
+2024-10-26 17:18:11,956 1 INFO agenda_odoo odoo.modules.registry: Registry loaded in 0.137s 
+2024-10-26 17:18:11,958 1 INFO agenda_odoo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-10-26 17:18:11,994 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:18:11] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 22 0.013 0.163
+2024-10-26 17:18:12,316 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-10-26 17:19:11,864 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2024-10-26 17:19:12,886 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2024-10-26 17:20:11,926 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2024-10-26 17:20:13,949 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2024-10-26 17:21:11,974 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2024-10-26 17:21:15,020 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2024-10-26 17:22:12,035 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2024-10-26 17:22:16,090 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2024-10-26 17:23:00,708 1 INFO ? odoo.service.server: Initiating shutdown 
+2024-10-26 17:23:00,709 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-10-26 17:23:00,720 1 ERROR ? odoo.addons.bus.models.bus: Bus.loop error, sleep and retry 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/models/bus.py", line 254, in run
+    self.loop()
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/models/bus.py", line 239, in loop
+    conn.poll()
+psycopg2.OperationalError: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+2024-10-26 17:23:00,720 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2024-10-26 17:23:00,728 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2024-10-26 17:23:00,740 1 INFO agenda_odoo odoo.sql_db: Connection to the database failed 
+2024-10-26 17:23:00,743 1 WARNING agenda_odoo odoo.addons.base.models.ir_cron: Exception in cron: 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_cron.py", line 119, in _process_jobs
+    with db.cursor() as cron_cr:
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 753, in cursor
+    return Cursor(self.__pool, self.__dbname, self.__dsn)
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 267, in __init__
+    self._cnx = pool.borrow(dsn)
+  File "<decorator-gen-13>", line 2, in borrow
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 682, in borrow
+    result = psycopg2.connect(
+  File "/usr/lib/python3/dist-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "db" (172.18.0.2), port 5432 failed: FATAL:  the database system is shutting down
+
+2024-10-26 17:23:00,746 1 INFO agenda_odoo odoo.sql_db: Connection to the database failed 
+2024-10-26 17:23:00,752 1 WARNING agenda_odoo odoo.addons.base.models.ir_cron: Exception in cron: 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_cron.py", line 119, in _process_jobs
+    with db.cursor() as cron_cr:
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 753, in cursor
+    return Cursor(self.__pool, self.__dbname, self.__dsn)
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 267, in __init__
+    self._cnx = pool.borrow(dsn)
+  File "<decorator-gen-13>", line 2, in borrow
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 682, in borrow
+    result = psycopg2.connect(
+  File "/usr/lib/python3/dist-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "db" (172.18.0.2), port 5432 failed: FATAL:  the database system is shutting down
+
+2024-10-26 17:23:01,188 1 DEBUG ? odoo.service.server: on_close call <bound method Event.set of <threading.Event object at 0x7f8d59ba1750>> 
+2024-10-26 17:23:01,189 1 DEBUG ? odoo.service.server: on_close call <function _kick_all at 0x7f8d59be45e0> 
+2024-10-26 17:23:01,190 1 DEBUG ? odoo.service.server: current thread: <_MainThread(MainThread, started 140245240799232)> 
+2024-10-26 17:23:01,191 1 DEBUG ? odoo.service.server: process <_MainThread(MainThread, started 140245240799232)> (False) 
+2024-10-26 17:23:01,193 1 DEBUG ? odoo.service.server: process <Thread(odoo.service.http.request.140245082482240, started 140245082482240)> (False) 
+2024-10-26 17:23:01,193 1 DEBUG ? odoo.service.server: join and sleep 
+2024-10-26 17:23:01,294 1 DEBUG ? odoo.service.server: join and sleep 
+2024-10-26 17:23:01,396 1 DEBUG ? odoo.service.server: join and sleep 
+2024-10-26 17:23:01,497 1 DEBUG ? odoo.service.server: join and sleep 
+2024-10-26 17:23:01,598 1 DEBUG ? odoo.service.server: join and sleep 
+2024-10-26 17:23:01,699 1 DEBUG ? odoo.service.server: join and sleep 
+2024-10-26 17:23:01,801 1 DEBUG ? odoo.service.server: process <ImDispatch(odoo.addons.bus.models.bus.Bus, started daemon 140245066925632)> (True) 
+2024-10-26 17:23:02,317 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 1 connections  
+2024-10-26 17:23:02,318 1 DEBUG ? odoo.service.server: -- 
+2024-10-26 17:23:02,334 1 ERROR agenda_odoo odoo.addons.bus.websocket: cursor already closed 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/tools/cache.py", line 99, in lookup
+    r = d[key]
+  File "<decorator-gen-5>", line 2, in __getitem__
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: ('ir.rule', <function IrRule._compute_domain at 0x7f8d5c7f7be0>, 2, False, 'bus.presence', 'read', (None,))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/websocket.py", line 317, in get_messages
+    message = self._process_next_message()
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/websocket.py", line 463, in _process_next_message
+    self._handle_control_frame(frame)
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/websocket.py", line 601, in _handle_control_frame
+    self._terminate()
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/websocket.py", line 584, in _terminate
+    env["ir.websocket"]._on_websocket_closed(self._cookies)
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/models/ir_websocket.py", line 136, in _on_websocket_closed
+    self.env["bus.presence"].search([("user_id", "=", self.env.uid)]).status = "offline"
+  File "/usr/lib/python3/dist-packages/odoo/models.py", line 1618, in search
+    return self.search_fetch(domain, [], offset=offset, limit=limit, order=order)
+  File "/usr/lib/python3/dist-packages/odoo/models.py", line 1641, in search_fetch
+    query = self._search(domain, offset=offset, limit=limit, order=order or self._order)
+  File "/usr/lib/python3/dist-packages/odoo/models.py", line 5414, in _search
+    self._flush_search(domain, order=order)
+  File "/usr/lib/python3/dist-packages/odoo/models.py", line 5371, in _flush_search
+    if ir_rule_domain := self.env['ir.rule']._compute_domain(self._name, 'read'):
+  File "<decorator-gen-65>", line 2, in _compute_domain
+  File "/usr/lib/python3/dist-packages/odoo/tools/cache.py", line 104, in lookup
+    value = d[key] = self.method(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_rule.py", line 147, in _compute_domain
+    rules = self._get_rules(model_name, mode=mode)
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_rule.py", line 131, in _get_rules
+    return self.browse(row[0] for row in self._cr.fetchall())
+psycopg2.InterfaceError: cursor already closed
+2024-10-26 17:23:04,330 1 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.request:INFO" 
+2024-10-26 17:23:04,331 1 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.response:INFO" 
+2024-10-26 17:23:04,332 1 DEBUG ? odoo.netsvc: logger level set: ":INFO" 
+2024-10-26 17:23:04,332 1 DEBUG ? odoo.netsvc: logger level set: "odoo:DEBUG" 
+2024-10-26 17:23:04,333 1 DEBUG ? odoo.netsvc: logger level set: "odoo.sql_db:INFO" 
+2024-10-26 17:23:04,333 1 DEBUG ? odoo.netsvc: logger level set: ":INFO" 
+2024-10-26 17:23:04,334 1 INFO ? odoo: Odoo version 17.0-20241017 
+2024-10-26 17:23:04,335 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-10-26 17:23:04,336 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/17.0', '/mnt/extra-addons'] 
+2024-10-26 17:23:04,336 1 INFO ? odoo: database: odoo@db:5432 
+2024-10-26 17:23:04,448 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-10-26 17:23:04,669 1 DEBUG ? odoo.service.server: Setting signal handlers 
+2024-10-26 17:23:04,671 1 DEBUG ? odoo.service.server: cron0 started! 
+2024-10-26 17:23:04,672 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 1cbe2f23af93:8069 
+2024-10-26 17:23:04,673 1 DEBUG ? odoo.service.server: cron1 started! 
+2024-10-26 17:23:08,122 1 DEBUG ? odoo.http: HTTP sessions stored in: /var/lib/odoo/.local/share/Odoo/sessions 
+2024-10-26 17:23:08,153 1 DEBUG ? odoo.modules.registry: Multiprocess load registry signaling: [Registry: 1] [Cache default: 1] [Cache assets: 1] [Cache templates: 1] [Cache routing: 1] 
+2024-10-26 17:23:08,159 1 INFO agenda_odoo odoo.modules.loading: loading 1 modules... 
+2024-10-26 17:23:08,159 1 DEBUG agenda_odoo odoo.modules.loading: Loading module base (1/1) 
+2024-10-26 17:23:08,167 1 DEBUG agenda_odoo odoo.modules.loading: Module base loaded in 0.01s, 0 queries 
+2024-10-26 17:23:08,168 1 INFO agenda_odoo odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-10-26 17:23:08,182 1 DEBUG agenda_odoo odoo.modules.loading: Updating graph with 10 more modules 
+2024-10-26 17:23:08,182 1 INFO agenda_odoo odoo.modules.loading: loading 11 modules... 
+2024-10-26 17:23:08,183 1 DEBUG agenda_odoo odoo.modules.loading: Loading module web (2/11) 
+2024-10-26 17:23:08,185 1 DEBUG agenda_odoo odoo.modules.loading: Module web loaded in 0.00s, 0 queries 
+2024-10-26 17:23:08,186 1 DEBUG agenda_odoo odoo.modules.loading: Loading module auth_totp (3/11) 
+2024-10-26 17:23:08,200 1 DEBUG agenda_odoo odoo.modules.loading: Module auth_totp loaded in 0.01s, 0 queries 
+2024-10-26 17:23:08,201 1 DEBUG agenda_odoo odoo.modules.loading: Loading module base_import (4/11) 
+2024-10-26 17:23:08,232 1 DEBUG agenda_odoo odoo.modules.loading: Module base_import loaded in 0.03s, 0 queries 
+2024-10-26 17:23:08,233 1 DEBUG agenda_odoo odoo.modules.loading: Loading module base_import_module (5/11) 
+2024-10-26 17:23:08,240 1 DEBUG agenda_odoo odoo.modules.loading: Module base_import_module loaded in 0.01s, 0 queries 
+2024-10-26 17:23:08,240 1 DEBUG agenda_odoo odoo.modules.loading: Loading module base_setup (6/11) 
+2024-10-26 17:23:08,246 1 DEBUG agenda_odoo odoo.modules.loading: Module base_setup loaded in 0.01s, 0 queries 
+2024-10-26 17:23:08,246 1 DEBUG agenda_odoo odoo.modules.loading: Loading module bus (7/11) 
+2024-10-26 17:23:08,261 1 DEBUG agenda_odoo odoo.modules.loading: Module bus loaded in 0.01s, 0 queries 
+2024-10-26 17:23:08,262 1 DEBUG agenda_odoo odoo.modules.loading: Loading module web_tour (8/11) 
+2024-10-26 17:23:08,265 1 DEBUG agenda_odoo odoo.modules.loading: Module web_tour loaded in 0.00s, 0 queries 
+2024-10-26 17:23:08,265 1 DEBUG agenda_odoo odoo.modules.loading: Loading module iap (9/11) 
+2024-10-26 17:23:08,270 1 DEBUG agenda_odoo odoo.modules.loading: Module iap loaded in 0.00s, 0 queries 
+2024-10-26 17:23:08,271 1 DEBUG agenda_odoo odoo.modules.loading: Loading module web_editor (10/11) 
+2024-10-26 17:23:08,298 1 DEBUG agenda_odoo odoo.modules.loading: Module web_editor loaded in 0.03s, 0 queries 
+2024-10-26 17:23:08,299 1 DEBUG agenda_odoo odoo.modules.loading: Loading module web_unsplash (11/11) 
+2024-10-26 17:23:08,304 1 DEBUG agenda_odoo odoo.modules.loading: Module web_unsplash loaded in 0.01s, 0 queries 
+2024-10-26 17:23:08,305 1 INFO agenda_odoo odoo.modules.loading: 11 modules loaded in 0.12s, 0 queries (+0 extra) 
+2024-10-26 17:23:08,340 1 INFO agenda_odoo odoo.modules.loading: Modules loaded. 
+2024-10-26 17:23:08,347 1 INFO agenda_odoo odoo.modules.registry: Registry loaded in 0.223s 
+2024-10-26 17:23:08,350 1 INFO agenda_odoo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-10-26 17:23:08,395 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:23:08] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 22 0.049 0.224
+2024-10-26 17:23:08,710 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-10-26 17:24:04,741 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2024-10-26 17:24:05,764 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2024-10-26 17:24:35,211 1 DEBUG ? odoo.modules.module: module __pycache__: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:24:35,404 1 DEBUG ? odoo.modules.module: module __init__.py: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:24:35,447 1 DEBUG agenda_odoo odoo.api: call base.module.update().onchange({}, [], {'state': {}, 'updated': {}, 'added': {}}) 
+2024-10-26 17:24:35,460 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:24:35] "POST /web/dataset/call_kw/base.module.update/onchange HTTP/1.1" 200 - 4 0.008 0.487
+2024-10-26 17:24:36,638 1 DEBUG agenda_odoo odoo.api: call base.module.update().web_save({}, specification={'state': {}, 'updated': {}, 'added': {}}) 
+2024-10-26 17:24:36,654 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:24:36] "POST /web/dataset/call_kw/base.module.update/web_save HTTP/1.1" 200 - 6 0.011 0.007
+2024-10-26 17:24:36,666 1 DEBUG agenda_odoo odoo.api: call base.module.update(7,).update_module() 
+2024-10-26 17:24:36,669 1 INFO agenda_odoo odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user admin@gmail.com #2 via 172.18.0.1 
+2024-10-26 17:24:37,281 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:24:37] "POST /web/dataset/call_button HTTP/1.1" 200 - 1381 0.338 0.279
+2024-10-26 17:24:44,021 1 DEBUG agenda_odoo odoo.api: call ir.module.module().search_panel_select_range('category_id', category_domain=[], enable_counters=True, expand=False, filter_domain=[], hierarchize=True, limit=200, search_domain=['|', '|', ['summary', 'ilike', 'agenda'], ['shortdesc', 'ilike', 'agenda'], ['name', 'ilike', 'agenda']]) 
+2024-10-26 17:24:44,058 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:24:44] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 40 0.021 0.019
+2024-10-26 17:24:44,068 1 DEBUG agenda_odoo odoo.api: call ir.module.module().web_search_read(count_limit=10001, domain=['|', '|', ['summary', 'ilike', 'agenda'], ['shortdesc', 'ilike', 'agenda'], ['name', 'ilike', 'agenda']], limit=80, offset=0, order='', specification={'icon': {}, 'icon_flag': {}, 'to_buy': {}, 'name': {}, 'state': {}, 'summary': {}, 'website': {}, 'application': {}, 'module_type': {}, 'shortdesc': {}}) 
+2024-10-26 17:24:44,073 1 DEBUG agenda_odoo odoo.modules.module: module appointment: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2024-10-26 17:24:44,077 1 INFO agenda_odoo werkzeug: 172.18.0.1 - - [26/Oct/2024 17:24:44] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.003 0.009
+2024-10-26 17:25:04,792 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2024-10-26 17:25:06,835 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2024-10-26 17:26:04,852 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2024-10-26 17:26:07,894 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
