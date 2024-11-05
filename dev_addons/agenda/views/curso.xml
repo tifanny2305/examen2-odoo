@@ -1,0 +1,27 @@
+<odoo>
+    <!-- <record id="view_form_curso" model="ir.ui.view">
+        <field name="name">curso.form</field>
+        <field name="model">agenda.curso</field>
+        <field name="arch" type="xml">
+            <form string="Curso">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="materia_id" widget="many2many_tags"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_tree_curso" model="ir.ui.view">
+        <field name="name">curso.tree</field>
+        <field name="model">agenda.curso</field>
+        <field name="arch" type="xml">
+            <tree string="Cursos">
+                <field name="name"/>
+                <field name="materia_id"/>
+            </tree>
+        </field>
+    </record> -->
+</odoo>

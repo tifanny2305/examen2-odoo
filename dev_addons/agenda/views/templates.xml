@@ -1,24 +1,214 @@
 <odoo>
-    <data>
+  <data>
+    <!-- Vistas de Admin -->
+    <record id="admin_list_view" model="ir.ui.view">
+      <field name="name">admin.list.view</field>
+      <field name="model">agenda.admin</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="name" />
+          <field name="user_id" />
+        </list>
+      </field>
+    </record>
 
-        <template id="listing">
-          <ul>
-            <li t-foreach="objects" t-as="object">
-              <a t-attf-href="#{ root }/objects/#{ object.id }">
-                <t t-esc="object.display_name"/>
-              </a>
-            </li>
-          </ul>
-        </template>
-        <template id="object">
-          <h1><t t-esc="object.display_name"/></h1>
-          <dl>
-            <t t-foreach="object._fields" t-as="field">
-              <dt><t t-esc="field"/></dt>
-              <dd><t t-esc="object[field]"/></dd>
-            </t>
-          </dl>
-        </template>
+    <record id="admin_form_view" model="ir.ui.view">
+      <field name="name">admin.form.view</field>
+      <field name="model">agenda.admin</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group>
+              <field name="name" />
+              <field name="user_id" />
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
 
-    </data>
+    <!-- Vistas de Profesor -->
+    <record id="profesor_list_view" model="ir.ui.view">
+      <field name="name">profesor.list.view</field>
+      <field name="model">agenda.profesor</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="name" />
+          <field name="user_id" />
+        </list>
+      </field>
+    </record>
+
+    <record id="profesor_form_view" model="ir.ui.view">
+      <field name="name">profesor.form.view</field>
+      <field name="model">agenda.profesor</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group>
+              <field name="name" />
+              <field name="user_id" />
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <!-- Vistas del Padre -->
+    <record id="padre_list_view" model="ir.ui.view">
+      <field name="name">padre.list.view</field>
+      <field name="model">agenda.padre</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="name" />
+          <field name="user_id" />
+        </list>
+      </field>
+    </record>
+
+    <record id="padre_form_view" model="ir.ui.view">
+      <field name="name">padre.form.view</field>
+      <field name="model">agenda.padre</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group>
+              <field name="name" />
+              <field name="user_id" />
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <!-- Crear de Usuario -->
+    <record id="user_form_view_custom" model="ir.ui.view">
+      <field name="name">user.form.view.custom</field>
+      <field name="model">res.users</field>
+      <field name="arch" type="xml">
+        <form string="Crear Usuario">
+          <sheet>
+            <group>
+              <!-- Campo de Nombre -->
+              <field name="name" placeholder="Nombre completo" />
+
+              <!-- Campo de Correo Electrónico -->
+              <field name="login" placeholder="Correo electrónico" />
+
+              <!-- Campo de Contraseña -->
+              <field name="password" password="1" placeholder="Contraseña" />
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <!-- Vista de lista personalizada para Usuarios -->
+    <record id="user_list_view_custom" model="ir.ui.view">
+      <field name="name">user.list.view.custom</field>
+      <field name="model">res.users</field>
+      <field name="arch" type="xml">
+        <list string="Lista de Usuarios" create="false">
+          <field name="name" string="Nombre" />
+          <field name="login" string="Correo Electrónico" />
+        </list>
+      </field>
+    </record>
+
+    <!-- Vista de lista de Estudiante -->
+    <record id="estudiante_list_view" model="ir.ui.view">
+      <field name="name">estudiante.list.view</field>
+      <field name="model">agenda.estudiante</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="name" />
+          <field name="user_id" />
+          <field name="padre_id" />
+        </list>
+      </field>
+    </record>
+
+    <!-- Vista de formulario de Estudiante -->
+    <record id="estudiante_form_view" model="ir.ui.view">
+      <field name="name">estudiante.form.view</field>
+      <field name="model">agenda.estudiante</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group>
+              <field name="name" />
+              <field name="user_id" />
+              <field name="padre_id" />
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <!-- Acción para Estudiante -->
+    <record id="estudiante_action" model="ir.actions.act_window">
+      <field name="name">Estudiantes</field>
+      <field name="res_model">agenda.estudiante</field>
+      <field name="view_mode">list,form</field>
+    </record>
+
+    <!-- Acción para crear un nuevo usuario -->
+    <record id="user_create_action" model="ir.actions.act_window">
+      <field name="name">Crear Usuario</field>
+      <field name="res_model">res.users</field>
+      <field name="view_mode">form</field>
+      <field name="view_id" ref="user_form_view_custom" />
+    </record>
+
+    <!-- Acción para abrir la vista de lista de usuarios -->
+    <record id="user_list_action" model="ir.actions.act_window">
+      <field name="name">Lista de Usuarios</field>
+      <field name="res_model">res.users</field>
+      <field name="view_mode">list,form</field>
+      <field name="view_id" ref="user_list_view_custom" />
+    </record>
+
+    <!-- Acciones para Profesor y Padre -->
+    <record id="profesor_action" model="ir.actions.act_window">
+      <field name="name">Profesores</field>
+      <field name="res_model">agenda.profesor</field>
+      <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="padre_action" model="ir.actions.act_window">
+      <field name="name">Padres</field>
+      <field name="res_model">agenda.padre</field>
+      <field name="view_mode">list,form</field>
+    </record>
+
+    <!-- Acción para Administrador -->
+    <record id="admin_action" model="ir.actions.act_window">
+      <field name="name">Administradores</field>
+      <field name="res_model">agenda.admin</field>
+      <field name="view_mode">list,form</field>
+    </record>
+
+    <!-- Menú principal y submenús -->
+    <menuitem id="menu_root" name="Agenda" />
+    <menuitem id="menu_usuarios" name="Usuarios" parent="menu_root" groups="agenda.group_administrativo"/>
+
+    <menuitem id="menu_user_list" name="Lista de Usuarios" parent="menu_usuarios"
+      action="user_list_action" groups="agenda.group_administrativo" />
+
+    <menuitem id="menu_create_user" name="Crear Usuario" parent="menu_usuarios"
+      action="user_create_action" groups="agenda.group_administrativo" />
+
+    <menuitem id="menu_profesor" name="Profesores" parent="menu_usuarios" action="profesor_action"
+      groups="agenda.group_administrativo" />
+
+    <menuitem id="menu_padre" name="Padres" parent="menu_usuarios" action="padre_action"
+      groups="agenda.group_administrativo" />
+
+
+    <menuitem id="menu_admin" name="Administradores" parent="menu_usuarios" action="admin_action"
+      groups="agenda.group_administrativo" />
+
+    <menuitem id="menu_estudiante" name="Estudiantes" parent="menu_usuarios"
+      action="estudiante_action" groups="agenda.group_administrativo" />
+  </data>
 </odoo>

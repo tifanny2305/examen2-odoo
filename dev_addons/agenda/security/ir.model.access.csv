@@ -1,2 +1,6 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_agenda_agenda,agenda.agenda,model_agenda_agenda,base.group_user,1,1,1,1
+
+access_agenda_profesor,access_agenda_profesor,agenda.model_agenda_profesor,base.group_user,1,1,1,1
+access_agenda_padre,access_agenda_padre,agenda.model_agenda_padre,base.group_user,1,1,1,1
+access_agenda_admin,access_agenda_admin,agenda.model_agenda_admin,base.group_user,1,1,1,1
+access_agenda_estudiante,access_agenda_estudiante,agenda.model_agenda_estudiante,base.group_user,1,1,1,1

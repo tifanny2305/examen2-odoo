@@ -1,0 +1,47 @@
+<odoo>
+    <!-- <data>
+        <record id="agenda.materia" model="ir.ui.view">
+        <field name="name">Materia form</field>
+        <field name="model">agenda.materia</field>
+        <field name="arch" type="xml">
+            <form string="Materia">
+                <group>
+                    <field name="name"/>
+                    <field name="curso_id" widget="many2many_tags"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_tree_materia" model="ir.ui.view">
+        <field name="name">Materia tree</field>
+        <field name="model">agenda.materia</field>
+        <field name="arch" type="xml">
+            <tree string="Materias">
+                <field name="name"/>
+                <field name="curso_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Acción para abrir la vista de Materia -->
+    <record id="agenda.action_materia" model="ir.actions.act_window">
+        <field name="name">Materia</field>
+        <field name="res_model">agenda.materia</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_tree_materia"/>
+    </record>
+
+    <!-- Menú para acceder a Materias -->
+    <menuitem name="Agenda" id="agenda.menu_root"/>
+
+    <!-- Barra -->
+    <menuitem name="Academico" id="agenda.menu_academico" parent="agenda.menu_root"/>
+
+    <!-- La sub barra -->
+    <menuitem name = "Materia" id = "agenda.menu_1" parent = "agenda.menu_academico"
+                action="agenda.action_window"/>
+
+
+    </data> -->
+</odoo>
