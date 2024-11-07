@@ -18,7 +18,7 @@ Long description of module's purpose
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['base', 'calendar'],
 
     # always loaded
     'data': [
@@ -26,8 +26,17 @@ Long description of module's purpose
         'security/group.xml',
         'security/security.xml',
         'views/templates.xml',
-        #'views/materia.xml',
-        #'views/curso.xml',
+
+        # Vistas
+
+        'views/actividad.xml',
+        'views/calendar.xml',
+        'views/carga_horaria.xml',
+        'views/comunicado.xml',
+        'views/curso.xml',
+        'views/materia.xml',
+        'views/pagos.xml',
+        
         'views/views.xml',
     ],
     # only loaded in demonstration mode

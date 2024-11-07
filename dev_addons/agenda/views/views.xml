@@ -1,9 +1,64 @@
 <odoo>
   <data>
-  
-    <!-- Top menu item -->
 
-    <menuitem name="Agenda" id="agenda.menu_root"/>
+    <!-- Vista lista para la agenda -->
+    <record model="ir.ui.view" id="agenda.list">
+      <field name="name">Agenda list</field>
+      <field name="model">agenda.agenda</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- Acción para abrir vista de agenda -->
+    <record model="ir.actions.act_window" id="agenda.action_window">
+      <field name="name">Agenda Academica</field>
+      <field name="res_model">agenda.agenda</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Acción para el servidor en la agenda -->
+    <record model="ir.actions.server" id="agenda.action_server">
+      <field name="name">Agenda server</field>
+      <field name="model_id" ref="model_agenda_agenda"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+
+    <!-- Menú Principal de los Principales -->
+    <menuitem name="Agenda Academica" id="agenda.menu_root"/>
+
+    <!-- Submenú Usuarios -->
+    <menuitem name="Usuarios" id="agenda.user" parent="agenda.menu_root"/>
+
+    <menuitem name="Administrativo" id="agenda.admin" parent="agenda.user"
+              action="agenda.action_window"/>
+      
+    <menuitem name="Profesores" id="agenda.profesor" parent="agenda.user"
+              action="agenda.action_window"/>
+
+    <menuitem name="Padres" id="agenda.padre" parent="agenda.user"
+              action="agenda.action_window"/>
+
+    <menuitem name="Alumnos" id="agenda.alumno" parent="agenda.user"
+              action="agenda.action_window"/>
+    
+
+    <!-- Submenú Horarios -->
+    <!-- <menuitem name="Horarios" id="agenda.horario" parent="agenda.menu_root"/>
+
+    <menuitem name="Server to list" id="agenda.menu_server" parent="agenda.horario"
+              action="agenda.action_server"/> -->
+
+    
 
   </data>
 </odoo>

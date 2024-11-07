@@ -1,0 +1,9 @@
+<odoo>
+    <data>
+
+        <!-- Menú Carga Horaria -->
+        <menuitem name="Carga Horaria" id="agenda.carga_horaria" parent="agenda.menu_root"
+          action="agenda.action_window"/> 
+
+    </data>
+</odoo>

@@ -11,7 +11,7 @@
         </record>
 
         <!-- Grupo para Administradores -->
-        <record id="group_administrativo" model="res.groups">
+        <record id="group_admin" model="res.groups">
             <field name="name">Administrativo</field>
         </record>
 

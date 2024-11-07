@@ -1,0 +1,27 @@
+<odoo>
+    <data>
+        
+        <record id="view_custom_calendar_form" model="ir.ui.view">
+            <field name="name">custom.calendar.form</field>
+            <field name="model">calendar.event</field>
+            <field name="arch" type="xml">
+                <form string="Custom Calendar Event">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="start"/>
+                            <field name="stop"/>
+                            <field name="custom_field"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Menú Principal Calendario -->
+        <menuitem name="Calendario" id="agenda.calendar" parent="agenda.menu_root"
+          action="calendar.action_calendar_event"/>    
+                
+    </data>
+</odoo>
+
