@@ -2,8 +2,8 @@
     <data>
 
         <!-- Vista de árbol para CursoMateria -->
-        <record id="agenda.curso_materia_list" model="ir.ui.view">
-            <field name="name">curso.materia.list</field>
+        <record id="agenda.cursomateria_list" model="ir.ui.view">
+            <field name="name">cursomateria.list</field>
             <field name="model">agenda.cursomateria</field>
             <field name="arch" type="xml">
                 <tree string="Relación Curso-Materia">
@@ -17,8 +17,8 @@
         </record>
 
         <!-- Vista de formulario para CursoMateria -->
-        <record id="agenda.curso_materia_form" model="ir.ui.view">
-            <field name="name">curso.materia.form</field>
+        <record id="agenda.cursomateria_form" model="ir.ui.view">
+            <field name="name">cursomateria.form</field>
             <field name="model">agenda.cursomateria</field>
             <field name="arch" type="xml">
                 <form string="Relación Curso-Materia">
@@ -36,15 +36,15 @@
         </record>
 
         <!-- Acción para abrir la vista CursoMateria -->
-        <record id="action_curso_materia_window" model="ir.actions.act_window">
+        <record id="action_cursomateria_window" model="ir.actions.act_window">
             <field name="name">Relación Curso-Materia</field>
             <field name="res_model">agenda.cursomateria</field>
             <field name="view_mode">tree,form</field>
         </record>
 
         <!-- Menú Curso-Materia -->
-        <menuitem name="Horario" id="agenda.curso_materia" parent="agenda.menu_root" 
-            action="action_curso_materia_window"/>
+        <menuitem name="Horario" id="agenda.cursomateria" parent="agenda.menu_root" 
+            action="action_cursomateria_window"/>
 
     </data>
 </odoo>

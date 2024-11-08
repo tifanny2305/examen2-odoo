@@ -2,4 +2,4 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_agenda_agenda,agenda.agenda,model_agenda_agenda,base.group_user,1,1,1,1
 access_agenda_materia,agenda.materia,model_agenda_materia,base.group_user,1,1,1,1
 access_agenda_curso,agenda.curso,model_agenda_curso,base.group_user,1,1,1,1
-access_agenda_curso_materia,agenda.curso_materia,model_agenda_curso_materia,base.group_user,1,1,1,1
+access_agenda_cursomateria,agenda.cursomateria,model_agenda_cursomateria,base.group_user,1,1,1,1

@@ -2,7 +2,7 @@
 from odoo import models, fields, api
 
 class CursoMateria(models.Model):
-    _name = 'agenda.curso_materia'
+    _name = 'agenda.cursomateria'
     _description = 'Relación entre Curso y Materia'
 
     curso_id = fields.Many2one('agenda.curso', string="Curso", required=True, ondelete='cascade')
