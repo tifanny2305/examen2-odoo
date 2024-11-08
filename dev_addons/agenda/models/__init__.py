@@ -6,7 +6,7 @@ from . import administrativo
 from . import calendar
 from . import carga_horaria
 from . import comunicado
-from . import curso_materia
+from . import cursomateria
 from . import curso
 from . import estudiante
 from . import gestion

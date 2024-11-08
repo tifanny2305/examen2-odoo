@@ -1,32 +1,40 @@
 <odoo>
     <data>
-        
-    <record id="view_materia_form" model="ir.ui.view">
+
+    <!-- Vista de árbol para Materia -->
+    <record id="agenda.materia_list" model="ir.ui.view">
+        <field name="name">materia.list</field>
+        <field name="model">agenda.materia</field>
+        <field name="arch" type="xml">
+            <tree string="Materias">
+                <field name="nombre"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Vista de formulario para Materia -->
+    <record id="agenda.materia_form" model="ir.ui.view">
         <field name="name">materia.form</field>
-        <field name="model">curso.materia</field>
+        <field name="model">agenda.materia</field>
         <field name="arch" type="xml">
             <form string="Materia">
-                <sheet>
-                    <group>
-                        <field name="nombre"/>
-                        <field name="cursos">
-                            <tree editable="bottom">
-                                <field name="curso_id"/>
-                                <field name="dia"/>
-                                <field name="horaInc"/>
-                                <field name="horaFin"/>
-                            </tree>
-                        </field>
-                    </group>
-                </sheet>
+                <group>
+                    <field name="nombre"/>
+                </group>            
             </form>
         </field>
     </record>
 
+    <!-- Acción para abrir la vista Materia -->
+    <record id="agenda.materia_action_window" model="ir.actions.act_window">
+        <field name="name">Materia</field>
+        <field name="res_model">agenda.materia</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
     <!-- Menú Materia -->
         <menuitem name="Materia" id="agenda.materia" parent="agenda.menu_root"
-          action="agenda.action_window"/>   
-
+          action="agenda.materia_action_window"/>   
 
 
     </data>

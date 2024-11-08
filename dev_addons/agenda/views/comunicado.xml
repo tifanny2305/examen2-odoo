@@ -2,8 +2,8 @@
     <data>
 
         <!-- Menú Comunicados -->
-        <menuitem name="Comunicados" id="agenda.comunicado" parent="agenda.menu_root"
-          action="agenda.action_window"/> 
+        <!-- <menuitem name="Comunicados" id="agenda.comunicado" parent="agenda.menu_root"
+          action="agenda.action_window"/>  -->
 
     </data>
 </odoo>

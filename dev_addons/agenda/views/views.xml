@@ -2,7 +2,7 @@
   <data>
 
     <!-- Vista lista para la agenda -->
-    <record model="ir.ui.view" id="agenda.list">
+    <!-- <record model="ir.ui.view" id="agenda.list">
       <field name="name">Agenda list</field>
       <field name="model">agenda.agenda</field>
       <field name="arch" type="xml">
@@ -10,7 +10,7 @@
           <field name="name"/>
         </tree>
       </field>
-    </record>
+    </record> -->
 
     <!-- Acción para abrir vista de agenda -->
     <record model="ir.actions.act_window" id="agenda.action_window">
@@ -50,15 +50,6 @@
 
     <menuitem name="Alumnos" id="agenda.alumno" parent="agenda.user"
               action="agenda.action_window"/>
-    
-
-    <!-- Submenú Horarios -->
-    <!-- <menuitem name="Horarios" id="agenda.horario" parent="agenda.menu_root"/>
-
-    <menuitem name="Server to list" id="agenda.menu_server" parent="agenda.horario"
-              action="agenda.action_server"/> -->
-
-    
 
   </data>
 </odoo>

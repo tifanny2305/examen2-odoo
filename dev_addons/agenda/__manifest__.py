@@ -22,6 +22,7 @@ Long description of module's purpose
 
     # always loaded
     'data': [
+        'views/views.xml',
         'security/ir.model.access.csv',
         'security/group.xml',
         'security/security.xml',
@@ -33,11 +34,12 @@ Long description of module's purpose
         'views/calendar.xml',
         'views/carga_horaria.xml',
         'views/comunicado.xml',
+        'views/curso_materia.xml',
         'views/curso.xml',
         'views/materia.xml',
         'views/pagos.xml',
         
-        'views/views.xml',
+        
     ],
     # only loaded in demonstration mode
     'demo': [

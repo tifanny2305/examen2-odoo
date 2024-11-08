@@ -2,8 +2,8 @@
 from odoo import models, fields
 
 class Materia(models.Model):
-    _name = 'curso.materia'
+    _name = 'agenda.materia'
     _description = 'Materia'
 
     nombre = fields.Char(string="Nombre")
-    cursos = fields.Many2many('curso.materia', 'materia_id',  string="Cursos")
+    curso_ids = fields.Many2many('agenda.curso', 'cursomateria', 'materia_id', 'curso_id',  string="Cursos")

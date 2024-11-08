@@ -1,0 +1,50 @@
+<odoo>
+    <data>
+
+        <!-- Vista de árbol para CursoMateria -->
+        <record id="agenda.curso_materia_list" model="ir.ui.view">
+            <field name="name">curso.materia.list</field>
+            <field name="model">agenda.cursomateria</field>
+            <field name="arch" type="xml">
+                <tree string="Relación Curso-Materia">
+                    <field name="curso_id"/>
+                    <field name="materia_id"/>
+                    <field name="dia"/>
+                    <field name="horaInc"/>
+                    <field name="horaFin"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Vista de formulario para CursoMateria -->
+        <record id="agenda.curso_materia_form" model="ir.ui.view">
+            <field name="name">curso.materia.form</field>
+            <field name="model">agenda.cursomateria</field>
+            <field name="arch" type="xml">
+                <form string="Relación Curso-Materia">
+                    <sheet>
+                        <group>
+                            <field name="curso_id" string="Curso"/>
+                            <field name="materia_id" string="Materia"/>
+                            <field name="dia"/>
+                            <field name="horaInc" widget="time"/>
+                            <field name="horaFin" widget="time"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Acción para abrir la vista CursoMateria -->
+        <record id="action_curso_materia_window" model="ir.actions.act_window">
+            <field name="name">Relación Curso-Materia</field>
+            <field name="res_model">agenda.cursomateria</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Menú Curso-Materia -->
+        <menuitem name="Horario" id="agenda.curso_materia" parent="agenda.menu_root" 
+            action="action_curso_materia_window"/>
+
+    </data>
+</odoo>

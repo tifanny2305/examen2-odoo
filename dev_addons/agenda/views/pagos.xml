@@ -2,8 +2,8 @@
     <data>
 
         <!-- Menú Pagos -->
-        <menuitem name="Pagos" id="agenda.pago" parent="agenda.menu_root"
-          action="agenda.action_window"/> 
+        <!-- <menuitem name="Pagos" id="agenda.pago" parent="agenda.menu_root"
+          action="agenda.action_window"/>  -->
 
     </data>
 </odoo>
