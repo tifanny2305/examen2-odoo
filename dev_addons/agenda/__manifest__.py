@@ -31,9 +31,10 @@ Long description of module's purpose
         # Vistas
 
         #'views/actividad.xml',
+        'views/comunicado.xml',
         'views/calendar.xml',
         #'views/carga_horaria.xml',
-        #'views/comunicado.xml',
+        
         'views/cursomateria.xml',
         'views/curso.xml',
         'views/materia.xml',

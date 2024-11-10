@@ -11,8 +11,9 @@
                             <field name="name"/>
                             <field name="start"/>
                             <field name="stop"/>
+                            <!-- <field name="curso_ids" widget="many2many_tags"/> -->
                             <field name="custom_field"/>
-                        </group>
+                        </group>                       
                     </sheet>
                 </form>
             </field>
@@ -21,7 +22,23 @@
         <!-- Menú Principal Calendario -->
         <menuitem name="Calendario" id="agenda.calendar" parent="agenda.menu_root"
           action="calendar.action_calendar_event"/>    
+
+        <record id="view_calendar_event_form_inherit_custom" model="ir.ui.view">
+            <field name="name">calendar.event.form.inherit.custom</field>
+            <field name="model">calendar.event</field>
+            <field name="inherit_id" ref="calendar.view_calendar_event_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//sheet/group" position="after">
+                    <!-- Agregar los campos personalizados aquí -->
+                    <field name="curso_ids" widget="many2many_tags"/>
+                    <field name="comunicado_id" invisible="1"/>
+                    <button name="%(agenda.comunicado_action_window)d" 
+                            type="action" 
+                            string="Ver Comunicado" 
+                            modifiers="{'invisible': [('comunicado_id', '=', False)]}"/>
+                </xpath>
+            </field>
+        </record>
                 
     </data>
 </odoo>
-

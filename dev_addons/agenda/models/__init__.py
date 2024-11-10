@@ -3,6 +3,7 @@
 from . import models
 from . import actividad
 from . import administrativo
+from . import archivo
 from . import calendar
 from . import carga_horaria
 from . import comunicado

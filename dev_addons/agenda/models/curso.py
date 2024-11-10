@@ -4,6 +4,7 @@ from odoo import models, fields
 class Curso(models.Model):
     _name = 'agenda.curso'
     _description = 'Curso'
+    _rec_name = 'nombre'
 
     nombre = fields.Char(string="Nombre")
     tipo = fields.Selection([

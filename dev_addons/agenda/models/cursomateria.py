@@ -1,5 +1,6 @@
 
 from odoo import models, fields, api
+from odoo.exceptions import ValidationError
 
 class CursoMateria(models.Model):
     _name = 'agenda.cursomateria'
@@ -7,6 +8,7 @@ class CursoMateria(models.Model):
 
     curso_id = fields.Many2one('agenda.curso', string="Curso", required=True, ondelete='cascade')
     materia_id = fields.Many2one('agenda.materia', string="Materia", required=True, ondelete='cascade')
+
     dia = fields.Selection([
         ('lunes', 'Lunes'),
         ('martes', 'Martes'),
@@ -16,6 +18,7 @@ class CursoMateria(models.Model):
     ], string="Día", required=True)
     horaInc = fields.Datetime(string="Hora Inicio", required=True)
     horaFin = fields.Datetime(string="Hora Fin", required=True)
+
 
     @api.constrains('horaInc', 'horaFin')
     def _check_horas(self):

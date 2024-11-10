@@ -1,9 +1,65 @@
 <odoo>
     <data>
 
+        <!-- Vista de lista para Comunicado -->
+        <record id="agenda_comunicado_list_view" model="ir.ui.view">
+            <field name="name">agenda.comunicado.list</field>
+            <field name="model">agenda.comunicado</field>
+            <field name="arch" type="xml">
+                <tree string="Comunicados">
+                    <field name="nombre"/>
+                    <field name="descripcion"/>
+                    <field name="cursos_nombres"/>
+                    <field name="fecha_inicio"/>
+                    <field name="fecha_fin"/>     
+                </tree>
+            </field>
+        </record>
+
+        <!-- Vista de Calendario para Comunicado -->
+        <!-- <record id="agenda_comunicado_calendar_view" model="ir.ui.view">
+            <field name="name">agenda.comunicado.calendar</field>
+            <field name="model">agenda.comunicado</field>
+            <field name="arch" type="xml">
+                <calendar string="Comunicados" date_start="fecha_inicio" date_stop="fecha_fin" color="curso_ids">
+                    <field name="nombre"/>
+                    <field name="curso_ids" widget="many2many_tags"/>
+                </calendar>
+            </field>
+        </record> -->
+
+        <!-- Vista de formulario para Comunicado -->
+        <record id="agenda_comunicado_form_view" model="ir.ui.view">
+            <field name="name">agenda.comunicado.form</field>
+            <field name="model">agenda.comunicado</field>
+            <field name="arch" type="xml">
+                <form string="Comunicado">
+                    <sheet>
+                        <group>
+                            <field name="nombre"/>
+                            <field name="descripcion"/>
+                            <field name="fecha_inicio"/>
+                            <field name="fecha_fin"/>
+                            <field name="curso_ids" widget="many2many_tags"/>
+                            <field name="archivo_ids" widget="many2many_binary"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Acción para abrir la vista de calendario de Comunicado -->
+        <record id="agenda.comunicado_action_window" model="ir.actions.act_window">
+            <field name="name">Comunicados</field>
+            <field name="res_model">agenda.comunicado</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="agenda_comunicado_list_view"/>
+            <field name="context">{'search_default_filter_my_calendar': 1}</field>
+        </record>
+
         <!-- Menú Comunicados -->
-        <!-- <menuitem name="Comunicados" id="agenda.comunicado" parent="agenda.menu_root"
-          action="agenda.action_window"/>  -->
+        <menuitem name="Comunicados" id="agenda.comunicado" parent="agenda.menu_root"
+          action="agenda.comunicado_action_window"/>
 
     </data>
 </odoo>
