@@ -37,19 +37,15 @@
     <menuitem name="Agenda Academica" id="agenda.menu_root"/>
 
     <!-- Submenú Usuarios -->
-    <menuitem name="Usuarios" id="agenda.user" parent="agenda.menu_root"/>
+    <!-- <menuitem name="Usuarios" id="agenda.user" parent="agenda.menu_root"/> -->
 
-    <menuitem name="Administrativo" id="agenda.admin" parent="agenda.user"
-              action="agenda.action_window"/>
+    <!-- <menuitem name="Administrativo" id="agenda.admin" parent="agenda.user"/> -->
       
-    <menuitem name="Profesores" id="agenda.profesor" parent="agenda.user"
-              action="agenda.action_window"/>
+    <!-- <menuitem name="Profesores" id="agenda.profesor" parent="agenda.user"/> -->
 
-    <menuitem name="Padres" id="agenda.padre" parent="agenda.user"
-              action="agenda.action_window"/>
+    <!-- <menuitem name="Padres" id="agenda.padre" parent="agenda.user"/> -->
 
-    <menuitem name="Alumnos" id="agenda.alumno" parent="agenda.user"
-              action="agenda.action_window"/>
+    <!-- <menuitem name="Alumnos" id="agenda.alumno" parent="agenda.user"/> -->
 
   </data>
 </odoo>

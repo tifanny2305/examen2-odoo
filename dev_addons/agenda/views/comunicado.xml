@@ -14,6 +14,7 @@
                     <field name="fecha_fin"/>     
                 </tree>
             </field>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_admin')])]"/>
         </record>
 
         <!-- Vista de Calendario para Comunicado -->
@@ -59,7 +60,7 @@
 
         <!-- Menú Comunicados -->
         <menuitem name="Comunicados" id="agenda.comunicado" parent="agenda.menu_root"
-          action="agenda.comunicado_action_window"/>
+          action="agenda.comunicado_action_window" groups="agenda.group_admin"/>
 
     </data>
 </odoo>

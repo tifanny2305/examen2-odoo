@@ -10,6 +10,7 @@
                 <field name="nombre"/>
             </tree>
         </field>
+        <field name="groups_id" eval="[(6, 0, [ref('agenda.group_admin')])]"/>
     </record>
 
     <!-- Vista de formulario para Materia -->
@@ -34,7 +35,7 @@
 
     <!-- Menú Materia -->
         <menuitem name="Materia" id="agenda.materia" parent="agenda.menu_root"
-          action="agenda.materia_action_window"/>   
+          action="agenda.materia_action_window" groups="agenda.group_admin"/>   
 
 
     </data>

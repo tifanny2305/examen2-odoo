@@ -3,21 +3,25 @@
         <!-- Grupo para Profesores -->
         <record id="group_profesor" model="res.groups">
             <field name="name">Profesor</field>
+            <field name="category_id" ref="base.module_category_user_management"/>
         </record>
 
         <!-- Grupo para Estudiantes -->
         <record id="group_estudiante" model="res.groups">
             <field name="name">Estudiante</field>
+            <field name="category_id" ref="base.module_category_user_management"/>
         </record>
 
         <!-- Grupo para Administradores -->
         <record id="group_admin" model="res.groups">
             <field name="name">Administrativo</field>
+            <field name="category_id" ref="base.module_category_user_management"/>
         </record>
 
         <!-- Grupo para Padres -->
         <record id="group_padre" model="res.groups">
             <field name="name">Padre</field>
+            <field name="category_id" ref="base.module_category_user_management"/>
         </record>
     </data>
 </odoo>

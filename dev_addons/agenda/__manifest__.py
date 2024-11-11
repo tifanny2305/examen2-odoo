@@ -29,7 +29,11 @@ Long description of module's purpose
         'views/templates.xml',
 
         # Vistas
-
+        'views/usuario.xml',
+        #'views/administrativo.xml',
+        #'views/padre.xml',
+        'views/estudiante.xml',
+        #'views/profesor.xml',
         #'views/actividad.xml',
         'views/comunicado.xml',
         'views/calendar.xml',

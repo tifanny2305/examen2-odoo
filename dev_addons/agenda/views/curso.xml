@@ -10,6 +10,7 @@
                     <field name="tipo"/>
                 </tree>
             </field>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_admin')])]"/>
         </record>
 
         <!-- Vista de formulario para Curso -->
@@ -37,6 +38,6 @@
 
         <!-- Menú Curso -->
             <menuitem name="Curso" id="agenda.curso" parent="agenda.menu_root"
-            action="agenda.curso_action_window"/>   
+            action="agenda.curso_action_window" groups="agenda.group_admin"/>   
     </data>
 </odoo>
