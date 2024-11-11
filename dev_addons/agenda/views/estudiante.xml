@@ -1,7 +1,50 @@
 <odoo>
     <data>
-        
-        
+
+        <!-- Vista de listado para el modelo Estudiante -->
+        <record id="agenda.estudiante_list" model="ir.ui.view">
+            <field name="name">agenda.estudiante.list</field>
+            <field name="model">agenda.estudiante</field>
+            <field name="arch" type="xml">
+                <tree string="Estudiantes">
+                    <field name="name" string="Nombre"/>
+                    <field name="email" string="Correo Electrónico"/>
+                    <field name="curso_id" string="Curso"/>
+                </tree>
+            </field>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_admin')])]"/>
+        </record>
+
+        <!-- Vista de formulario para el modelo Estudiante -->
+        <record id="agenda.estudiante_form" model="ir.ui.view">
+            <field name="name">agenda.estudiante.form</field>
+            <field name="model">agenda.estudiante</field>
+            <field name="arch" type="xml">
+                <form string="Estudiante">
+                    <sheet>
+                        <group>
+                            <field name="name" string="Nombre" required="1"/>
+                            <field name="email" string="Correo Electrónico" required="1"/>
+                            <field name="password" password="True" string="Contraseña" required="1"/>
+                            <field name="curso_id" string="Curso"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Acción para abrir la vista del Estudiante -->
+        <record id="agenda.estudiante_action_window" model="ir.actions.act_window">
+            <field name="name">Estudiantes</field>
+            <field name="res_model">agenda.estudiante</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('is_student', '=', True)]</field>
+        </record>
+
+        <!-- Menú Estudiantes -->
+        <menuitem name="Estudiantes" id="agenda.estudainte_menu" parent="agenda.menu_root" 
+            action="agenda.estudiante_action_window" groups="agenda.group_admin"/>
         
     </data>
 </odoo>
+

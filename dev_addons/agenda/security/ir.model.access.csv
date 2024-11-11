@@ -8,7 +8,7 @@ access_agenda_archivo,agenda.archivo,model_agenda_archivo,base.group_user,1,1,1,
 access_calendar_event_custom,access_calendar_event_custom,model_calendar_event,,1,1,1,1
 
 access_agenda_usuario,agenda.usuario,model_res_users,agenda.group_admin,1,1,1,1
-access_agenda_administrativo,agenda.administrativo,model_res_users,agenda.group_admin,1,1,1,1
-access_agenda_estudiante,agenda.estudiante,model_res_users,agenda.group_estudiante,1,0,0,0
-access_agenda_padre,agenda.padre,model_res_users,agenda.group_padre,1,0,0,0
-access_agenda_profesor,agenda.profesor,model_res_users,agenda.group_profesor,1,1,1,1
+access_agenda_administrativo,agenda.administrativo,model_agenda_administrativo,agenda.group_admin,1,1,1,1
+access_agenda_estudiante,agenda.estudiante,model_agenda_estudiante,agenda.group_admin,1,1,1,1
+access_agenda_padre,agenda.padre,model_agenda_padre,agenda.group_admin,1,1,1,1
+access_agenda_profesor,agenda.profesor,model_agenda_profesor,agenda.group_admin,1,1,1,1

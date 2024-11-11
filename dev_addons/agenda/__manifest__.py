@@ -31,7 +31,7 @@ Long description of module's purpose
         # Vistas
         'views/usuario.xml',
         #'views/administrativo.xml',
-        #'views/padre.xml',
+        'views/padre.xml',
         'views/estudiante.xml',
         #'views/profesor.xml',
         #'views/actividad.xml',
