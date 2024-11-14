@@ -1,0 +1,48 @@
+<odoo>
+    <data>
+        <!-- Vista de lista para Administrativo -->
+        <record id="agenda_administrativo_list_view" model="ir.ui.view">
+            <field name="name">agenda.administrativo.list</field>
+            <field name="model">agenda.administrativo</field>
+            <field name="arch" type="xml">
+                <tree string="Administrativos">
+                    <field name="name"/>
+                    <field name="email"/>
+                    <field name="telefono"/>
+                    <field name="direccion"/>
+                </tree>
+            </field>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_admin')])]"/>
+        </record>
+
+        <!-- Vista de formulario para Administrativo -->
+        <record id="agenda_administrativo_form_view" model="ir.ui.view">
+            <field name="name">agenda.administrativo.form</field>
+            <field name="model">agenda.administrativo</field>
+            <field name="arch" type="xml">
+                <form string="Administrativo">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="email"/>
+                            <field name="password" password="True"/>
+                            <field name="direccion"/>
+                            <field name="telefono"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Acción para abrir la vista de lista de Administrativos -->
+        <record id="agenda_administrativo_action_window" model="ir.actions.act_window">
+            <field name="name">Administrativos</field>
+            <field name="res_model">agenda.administrativo</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Menú Administrativos -->
+        <menuitem name="Administrativos" id="agenda.administrativo" parent="agenda.menu_root"
+          action="agenda_administrativo_action_window" groups="agenda.group_admin"/>
+    </data>
+</odoo>

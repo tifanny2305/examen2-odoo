@@ -1,5 +1,5 @@
 
-from odoo import models, fields
+from odoo import models, fields, api
 
 class Calendar(models.Model):
     _inherit = 'calendar.event'
@@ -7,6 +7,13 @@ class Calendar(models.Model):
     custom_field = fields.Char(string="Custom Field")
     curso_ids = fields.Many2many('agenda.curso', string="Cursos")
     comunicado_id = fields.Many2one('agenda.comunicado', string="Comunicado")
+    actividad_id = fields.Many2one('agenda.actividad', string="Actividad")
+    archivo_ids = fields.One2many('agenda.archivo', compute='_compute_archivo_ids', string="Archivos Adjuntos", store=False)
+
+    @api.depends('comunicado_id')
+    def _compute_archivo_ids(self):
+        for event in self:
+            event.archivo_ids = event.comunicado_id.archivo_ids
 
     def write(self, vals):
 

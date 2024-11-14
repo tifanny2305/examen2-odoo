@@ -32,10 +32,16 @@
                     <!-- Agregar los campos personalizados aquí -->
                     <field name="curso_ids" widget="many2many_tags"/>
                     <field name="comunicado_id" invisible="1"/>
+                    <field name="archivo_ids" widget="one2many_binary" string="Archivos Adjuntos">
+                        <tree string="Archivos Adjuntos">
+                            <field name="name"/>
+                            <field name="file" filename="name"/>
+                        </tree>
+                    </field>
                     <button name="%(agenda.comunicado_action_window)d" 
-                            type="action" 
-                            string="Ver Comunicado" 
-                            modifiers="{'invisible': [('comunicado_id', '=', False)]}"/>
+                        type="action" 
+                        string="Ver Comunicado" 
+                        modifiers="{'invisible': [('comunicado_id', '=', False)]}"/>
                 </xpath>
             </field>
         </record>

@@ -1,9 +1,84 @@
 <odoo>
     <data>
 
+        <!-- Vista de lista para Actividad -->
+        <record id="agenda_actividad_list_view" model="ir.ui.view">
+            <field name="name">agenda.actividad.list</field>
+            <field name="model">agenda.actividad</field>
+            <field name="arch" type="xml">
+                <tree string="Actividad" >
+                    <field name="nombre"/>
+                    <field name="descripcion"/>
+                    <field name="cursos_nombres"/>
+                    <field name="nota"/>
+                    <field name="fecha_ini"/>
+                    <field name="fecha_fin"/>
+                    <field name="archivo_ids" widget="one2many">
+                        <tree string="Archivos Adjuntos">
+                            <field name="name"/>
+                            <field name="file" filename="name"/>
+                        </tree>
+                        <form string="Archivo">
+                            <group>
+                                <field name="name"/>
+                                <field name="file" filename="name"/>
+                            </group>
+                        </form>
+                    </field>     
+                </tree>
+            </field>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_admin'), ref('agenda.group_profesor')])]"/>
+        </record>
+
+        <!-- Vista de formulario para Actividad -->
+        <record id="agenda_actividad_form_view" model="ir.ui.view">
+            <field name="name">agenda.actividad.form</field>
+            <field name="model">agenda.actividad</field>
+            <field name="arch" type="xml">
+                <form string="Actividad">
+                    <sheet>
+                        <group>
+                            <field name="nombre" string="Nombre"/>
+                            <field name="descripcion" string="Descripción"/>
+                            <field name="fecha_ini" string="Fecha de Inicio"/>
+                            <field name="fecha_fin" string="Fecha de Fin"/>
+                            <field name="nota" string="Nota"/>
+                            <field name="curso_ids" string="Cursos" widget="many2many_tags"/>
+                            <!-- <field name="archivo_ids" widget="one2many_list"/> -->
+                        </group>
+                        <group string="Archivos Adjuntos">
+                            <field name="archivo_ids">
+                                <tree string="Archivos Adjuntos">
+                                    <field name="name" string="Nombre del Archivo"/>
+                                    <field name="file" filename="name"/>
+                                </tree>
+                                <form string="Archivo">
+                                    <group>
+                                        <field name="name" string="Nombre del Archivo"/>
+                                        <field name="file" widget="binary" filename="name" string="Archivo"/>
+                                    </group>
+                                </form>
+                            </field>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Acción para abrir la vista de calendario de Actividad -->
+        <record id="agenda.actividad_action_window" model="ir.actions.act_window">
+            <field name="name">Actividad</field>
+            <field name="res_model">agenda.actividad</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="agenda_actividad_list_view"/>
+            <field name="context">{'search_default_filter_my_calendar': 1}</field>
+            <field name="domain">[]</field>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_profesor'), ref('agenda.group_admin')])]"/> 
+        </record>
+
         <!-- Menú Actividades -->
-        <!-- <menuitem name="Actividades" id="agenda.actividad" parent="agenda.menu_root"
-          action="agenda.action_window"/>  -->
+        <menuitem name="Actividades" id="agenda.actividad" parent="agenda.menu_root"
+          action="agenda.actividad_action_window" groups="agenda.group_admin,agenda.group_profesor"/>
 
     </data>
 </odoo>

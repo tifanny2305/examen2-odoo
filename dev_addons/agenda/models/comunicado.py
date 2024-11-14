@@ -60,7 +60,7 @@ class Comunicado(models.Model):
                     if 'descripcion' in vals:
                         update_vals['description'] = vals['descripcion']
                     if 'curso_ids' in vals:
-                        update_vals['curso_ids'] = [(6, 0, comunicado.curso_ids.ids)]
+                        update_vals['curso_ids'] = [(6, 0, vals['curso_ids'][0][2])]
 
                     if update_vals:
                         comunicado.event_id.with_context(from_comunicado_write=True).write(update_vals)

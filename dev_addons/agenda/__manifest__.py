@@ -23,21 +23,21 @@ Long description of module's purpose
     # always loaded
     'data': [
         'views/views.xml',
-        'security/ir.model.access.csv',
         'security/group.xml',
+        'security/ir.model.access.csv',
         'security/security.xml',
         'views/templates.xml',
 
         # Vistas
         'views/usuario.xml',
-        #'views/administrativo.xml',
+        'views/administrativo.xml',
         'views/padre.xml',
         'views/estudiante.xml',
-        #'views/profesor.xml',
-        #'views/actividad.xml',
+        'views/profesor.xml',
+        'views/actividad.xml',
         'views/comunicado.xml',
         'views/calendar.xml',
-        #'views/carga_horaria.xml',
+        'views/carga_horaria.xml',
         
         'views/cursomateria.xml',
         'views/curso.xml',

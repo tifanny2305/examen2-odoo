@@ -33,7 +33,8 @@
                             <field name="sexo" string="Sexo"/>
                         </group>
                         <group>
-                            <field name="estudiante_ids" widget="many2many_tags">
+                             <!-- Cambiamos de many2many_tags a one2many_list para permitir la creación directa -->
+                            <field name="estudiante_ids" widget="one2many_list">
                                 <tree string="Estudiantes">
                                     <field name="name" string="Nombre"/>
                                     <field name="curso_id" string="Curso"/>

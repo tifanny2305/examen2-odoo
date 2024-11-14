@@ -5,6 +5,7 @@ class Archivo(models.Model):
     _description = 'Archivo relacionado con Comunicado'
 
     name = fields.Char(string="Nombre del Archivo", required=True)
+    file = fields.Binary(string="Archivo")
     comunicado_id = fields.Many2one('agenda.comunicado', string="Comunicado", ondelete='cascade')
-    archivo = fields.Binary(string="Archivo", attachment=True, required=True)
     mimetype = fields.Char(string="Tipo MIME")  # Agregado para almacenar el tipo MIME del archivo
+    actividad_id = fields.Many2one('agenda.actividad', string="Actividad", ondelete="cascade")

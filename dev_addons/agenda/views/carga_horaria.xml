@@ -1,9 +1,50 @@
 <odoo>
     <data>
 
+        <!-- Vista de lista para Carga Horaria -->
+        <record id="agenda.cargahoraria_list" model="ir.ui.view">
+            <field name="name">agenda.cargahoraria.list</field>
+            <field name="model">agenda.cargahoraria</field>
+            <field name="arch" type="xml">
+                <tree string="Cargas Horarias">
+                    <field name="anio"/>
+                    <field name="profesor_id"/>
+                     <field name="materia_nombres" string="Materias"/>
+                    <field name="curso_nombres" string="Cursos"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Vista de formulario para Carga Horaria -->
+        <record id="agenda.cargahoraria_form" model="ir.ui.view">
+            <field name="name">agenda.cargahoraria.form</field>
+            <field name="model">agenda.cargahoraria</field>
+            <field name="arch" type="xml">
+                <form string="Carga Horaria">
+                    <sheet>
+                        <group>
+                            <field name="anio"/>
+                            <field name="profesor_id" required="1"/>
+                        </group>
+                        <group>
+                            <field name="curso_ids" widget="many2many_tags"/>
+                            <field name="materia_ids" widget="many2many_tags"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <!-- Acción para Carga Horaria -->
+        <record id="agenda.cargahoraria_action_window" model="ir.actions.act_window">
+            <field name="name">Cargas Horarias</field>
+            <field name="res_model">agenda.cargahoraria</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
         <!-- Menú Carga Horaria -->
-        <!-- <menuitem name="Carga Horaria" id="agenda.carga_horaria" parent="agenda.menu_root"
-          action="agenda.action_window"/>  -->
+        <menuitem name="Carga Horaria" id="agenda.carga_horaria" parent="agenda.menu_root"
+          action="agenda.cargahoraria_action_window" groups="agenda.group_admin"/> 
 
     </data>
 </odoo>

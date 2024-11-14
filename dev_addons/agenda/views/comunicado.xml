@@ -6,28 +6,28 @@
             <field name="name">agenda.comunicado.list</field>
             <field name="model">agenda.comunicado</field>
             <field name="arch" type="xml">
-                <tree string="Comunicados">
+                <tree string="Comunicados" >
                     <field name="nombre"/>
                     <field name="descripcion"/>
                     <field name="cursos_nombres"/>
                     <field name="fecha_inicio"/>
-                    <field name="fecha_fin"/>     
+                    <field name="fecha_fin"/>
+                    <field name="archivo_ids" widget="one2many" groups="agenda.group_admin">
+                        <tree string="Archivos Adjuntos">
+                            <field name="name"/>
+                            <field name="file" filename="name"/>
+                        </tree>
+                        <form string="Archivo">
+                            <group>
+                                <field name="name"/>
+                                <field name="file" filename="name"/>
+                            </group>
+                        </form>
+                    </field>     
                 </tree>
             </field>
-            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_admin')])]"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_admin'), ref('agenda.group_estudiante')])]"/>
         </record>
-
-        <!-- Vista de Calendario para Comunicado -->
-        <!-- <record id="agenda_comunicado_calendar_view" model="ir.ui.view">
-            <field name="name">agenda.comunicado.calendar</field>
-            <field name="model">agenda.comunicado</field>
-            <field name="arch" type="xml">
-                <calendar string="Comunicados" date_start="fecha_inicio" date_stop="fecha_fin" color="curso_ids">
-                    <field name="nombre"/>
-                    <field name="curso_ids" widget="many2many_tags"/>
-                </calendar>
-            </field>
-        </record> -->
 
         <!-- Vista de formulario para Comunicado -->
         <record id="agenda_comunicado_form_view" model="ir.ui.view">
@@ -42,7 +42,21 @@
                             <field name="fecha_inicio"/>
                             <field name="fecha_fin"/>
                             <field name="curso_ids" widget="many2many_tags"/>
-                            <field name="archivo_ids" widget="many2many_binary"/>
+                            <!-- <field name="archivo_ids" widget="one2many_list"/> -->
+                        </group>
+                        <group string="Archivos Adjuntos">
+                            <field name="archivo_ids">
+                                <tree string="Archivos Adjuntos">
+                                    <field name="name" string="Nombre del Archivo"/>
+                                    <field name="file" filename="name"/>
+                                </tree>
+                                <form string="Archivo">
+                                    <group>
+                                        <field name="name" string="Nombre del Archivo"/>
+                                        <field name="file" widget="binary" filename="name" string="Archivo"/>
+                                    </group>
+                                </form>
+                            </field>
                         </group>
                     </sheet>
                 </form>
@@ -56,6 +70,8 @@
             <field name="view_mode">tree,form</field>
             <field name="view_id" ref="agenda_comunicado_list_view"/>
             <field name="context">{'search_default_filter_my_calendar': 1}</field>
+            <field name="domain">[]</field>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_estudiante'), ref('agenda.group_admin')])]"/> 
         </record>
 
         <!-- Menú Comunicados -->
