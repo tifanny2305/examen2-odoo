@@ -11,6 +11,8 @@ access_calendar_event_admin,calendar.event,model_calendar_event,agenda.group_adm
 access_agenda_admin_usuario,agenda.usuario,model_res_users,agenda.group_admin,1,1,1,1
 access_agenda_admin_administrativo,agenda.administrativo,model_agenda_administrativo,agenda.group_admin,1,1,1,1
 access_agenda_admin_profesor,agenda.profesor,model_agenda_profesor,agenda.group_admin,1,1,1,1
+access_agenda_admin_padre,agenda.padre,model_agenda_padre,agenda.group_admin,1,1,1,1
+access_agenda_admin_estudiante,agenda.estudiante,model_agenda_estudiante,agenda.group_admin,1,1,1,1
 access_agenda_admin_cargahoraria,agenda.cargahoraria,model_agenda_cargahoraria,agenda.group_admin,1,1,1,1
 access_agenda_admin_actividad,agenda.actividad,model_agenda_actividad,agenda.group_admin,1,1,1,1
 
